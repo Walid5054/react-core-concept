@@ -2,6 +2,7 @@ import {useState} from 'react'
 export default function Batsman(){
   const [runs,setRuns] = useState(0)
   const [sixes, setSixes] = useState(0)
+  const [fours, setFours] = useState(0)
   
   function handleSingle(){
     const updateRuns = runs +1;
@@ -12,6 +13,13 @@ export default function Batsman(){
     const updateSixes = sixes+1
     setSixes(updateSixes)
     setRuns(updateRuns)
+  }
+  const handleFour=()=>{
+ 
+   const updateRuns = runs +4
+   const updateFour = fours +1
+   setRuns(updateRuns)
+   setFours(updateFour) 
   }
   return (
 
@@ -25,7 +33,7 @@ export default function Batsman(){
       }
       <h1>Score: {runs}</h1>
       <button onClick={handleSingle}>Singles</button>
-      <button>Four</button>
+      <button onClick={handleFour}>Four</button>
       <button onClick={handleSix}>Six</button>
     </div>
   )
