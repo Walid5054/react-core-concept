@@ -8,6 +8,8 @@ import Posts from './Posts';
 import Players from './players';
 import PracCounter from './pracCounter';
 import ShowHide from './show_hide';
+import { PasswordToggle } from './password';
+import { LoginValidation } from './login';
 
 
 
@@ -44,6 +46,8 @@ function App() {
 
 <PracCounter></PracCounter>
 <ShowHide></ShowHide>
+<PasswordToggle></PasswordToggle>
+<LoginValidation></LoginValidation>
     {/* <Counter></Counter>
      
 
